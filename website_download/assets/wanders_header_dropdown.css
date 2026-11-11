@@ -1,0 +1,226 @@
+/**
+ * WANDERS HEADER MEGA DROPDOWN — SẢN PHẨM
+ * Architectural 6-Category Visual Dropdown matching WANDERS Surface System
+ */
+
+/* Nav Trigger Wrapper */
+.wanders-nav-dropdown-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.wanders-nav-dropdown-wrap::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  right: -12px;
+  top: 100%;
+  height: 30px;
+  background: transparent;
+  pointer-events: none;
+}
+
+.wanders-nav-dropdown-wrap.is-open::after {
+  pointer-events: auto;
+}
+
+.wanders-nav-chevron {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-left: 5px;
+  vertical-align: -1px;
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 0.7;
+}
+
+.wanders-nav-dropdown-wrap.is-open .wanders-nav-chevron {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+/* Full-width Mega Dropdown Panel */
+.wanders-mega-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 49;
+  background-color: rgba(246, 243, 236, 0.98);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(226, 221, 210, 0.9);
+  border-bottom: 1px solid rgba(214, 173, 69, 0.35);
+  box-shadow: 0 22px 44px -14px rgba(7, 59, 46, 0.16),
+              0 6px 16px -6px rgba(7, 59, 46, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 220ms cubic-bezier(0.22, 1, 0.36, 1),
+              transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+              visibility 220ms ease;
+}
+
+.wanders-mega-dropdown.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.wanders-mega-inner {
+  width: 100%;
+  max-width: 1320px;
+  margin-inline: auto;
+  padding: 20px 40px 26px;
+  box-sizing: border-box;
+}
+
+.wanders-mega-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.wanders-mega-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #073B2E;
+}
+
+.wanders-mega-label-line {
+  width: 24px;
+  height: 1.5px;
+  background-color: #D6AD45;
+  display: inline-block;
+}
+
+.wanders-mega-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #073B2E;
+  text-decoration: none;
+  transition: color 200ms ease, gap 200ms ease;
+}
+
+.wanders-mega-all:hover {
+  color: #0F4C3A;
+  gap: 9px;
+}
+
+/* 6-Column Visual Category Grid */
+.wanders-mega-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.wanders-mega-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  aspect-ratio: 4 / 3;
+  background-color: #E5DFD5;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 260ms ease;
+}
+
+.wanders-mega-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -6px rgba(31, 44, 39, 0.2);
+}
+
+.wanders-mega-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 550ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.wanders-mega-card:hover .wanders-mega-card-img {
+  transform: scale(1.06);
+}
+
+.wanders-mega-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(7, 59, 46, 0.88) 0%,
+    rgba(7, 59, 46, 0.28) 54%,
+    rgba(7, 59, 46, 0.04) 100%
+  );
+  transition: background 260ms ease;
+}
+
+.wanders-mega-card:hover .wanders-mega-card-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(15, 76, 58, 0.92) 0%,
+    rgba(7, 59, 46, 0.35) 55%,
+    rgba(214, 173, 69, 0.08) 100%
+  );
+}
+
+.wanders-mega-card-title {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+/* Mobile Drawer Sub-categories */
+.wanders-mobile-subcats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding-left: 10px;
+  margin-top: -6px;
+  margin-bottom: 4px;
+}
+
+.wanders-mobile-subcat-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #E2DDD2;
+  color: #073B2E;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+.wanders-mobile-subcat-link:hover {
+  background-color: #073B2E;
+  border-color: #073B2E;
+  color: #F6F3EC;
+}
+

@@ -1,0 +1,167 @@
+[
+  {
+    "index": 0,
+    "tag": "HEADER",
+    "id": "",
+    "className": "sticky top-0 z-50 border-b border-line bg-bone/95 backdrop-blur-md transition-shadow duration-300",
+    "rect": {
+      "width": 1440,
+      "height": 87
+    },
+    "textSnippet": "WANDERS DEINE WAND MAL ANDERS Sản phẩm Bảng màu Dự án Giới thiệu Liên hệ TƯ VẤN CHỌN SƠN"
+  },
+  {
+    "index": 1,
+    "tag": "SECTION",
+    "id": "",
+    "className": "relative isolate w-full overflow-hidden bg-charcoal",
+    "rect": {
+      "width": 1440,
+      "height": 710
+    },
+    "heading": "Mỗi bức tường, một dấu ấn riêng.",
+    "textSnippet": "WANDERS PAINT · DEINE WAND MAL ANDERS Mỗi bức tường, một dấu ấn riêng. Khám phá những giải pháp sơn và cảm hứng màu sắc dành cho không gian sống hiệ"
+  },
+  {
+    "index": 2,
+    "tag": "SECTION",
+    "id": "",
+    "className": "border-t border-line bg-cream py-20 lg:py-28",
+    "rect": {
+      "width": 1440,
+      "height": 1050.59375
+    },
+    "heading": "Khám phá màu sắc của riêng bạn",
+    "textSnippet": "COLOR EXPLORER Khám phá màu sắc của riêng bạn Tìm cảm hứng màu sắc phù hợp với phong cách và không gian sống. WARM NEUTRAL — TRUNG TÍNH ẤM Cát ấm "
+  },
+  {
+    "index": 3,
+    "tag": "SECTION",
+    "id": "",
+    "className": "bg-bone py-20 lg:py-28",
+    "rect": {
+      "width": 1440,
+      "height": 1376.265625
+    },
+    "heading": "Giải pháp sơn cho mọi không gian",
+    "textSnippet": "PAINT COLLECTIONS Giải pháp sơn cho mọi không gian Sáu nhóm sản phẩm được tổ chức theo bề mặt và điều kiện sử dụng — từ lớp lót đến hoàn thiện ngoại"
+  },
+  {
+    "index": 4,
+    "tag": "SECTION",
+    "id": "",
+    "className": "border-t border-line bg-cream py-20 lg:py-28",
+    "rect": {
+      "width": 1440,
+      "height": 988.03125
+    },
+    "heading": "Sản phẩm WANDERS nổi bật",
+    "textSnippet": "CATALOGUE Sản phẩm WANDERS nổi bật Danh mục sản phẩm theo bề mặt sử dụng. Hình ảnh và thông số chính thức sẽ được cập nhật từ tài liệu WANDERS. SƠN"
+  },
+  {
+    "index": 5,
+    "tag": "SECTION",
+    "id": "",
+    "className": "bg-bone py-20 lg:py-28",
+    "rect": {
+      "width": 1440,
+      "height": 879.625
+    },
+    "heading": "Màu sắc thay đổi không gian sống",
+    "textSnippet": "LIVING WITH COLOUR Màu sắc thay đổi không gian sống Bốn hướng phối màu cho bốn cách sống khác nhau — chọn một phong cách để xem bảng màu gợi ý. MOD"
+  },
+  {
+    "index": 6,
+    "tag": "SECTION",
+    "id": "",
+    "className": "border-t border-line bg-cream py-20 lg:py-28",
+    "rect": {
+      "width": 1440,
+      "height": 1138.4375
+    },
+    "heading": "Không gian & Công trình WANDERS",
+    "textSnippet": "PROJECT JOURNAL Không gian & Công trình WANDERS Ghi chép về vật liệu, ánh sáng và cách một bảng màu đi vào đời sống của công trình. HÌNH ẢNH MINH H"
+  },
+  {
+    "index": 7,
+    "tag": "SECTION",
+    "id": "",
+    "className": "bg-bone py-20 lg:py-28",
+    "rect": {
+      "width": 1440,
+      "height": 955.359375
+    },
+    "heading": "Giá trị tạo nên WANDERS",
+    "textSnippet": "WHY WANDERS Giá trị tạo nên WANDERS Một thương hiệu sơn được xây từ ba việc: chọn đúng màu, đúng lớp và đúng người đồng hành. 01 Chọn màu cùng khôn"
+  },
+  {
+    "index": 8,
+    "tag": "SECTION",
+    "id": "",
+    "className": "bg-charcoal text-bone",
+    "rect": {
+      "width": 1440,
+      "height": 615.0625
+    },
+    "heading": "Khám phá WANDERS",
+    "textSnippet": "ABOUT WANDERS Khám phá WANDERS WANDERS bắt đầu từ một ý niệm đơn giản: màu sơn không phải lớp phủ cuối cùng của công trình, mà là vật liệu định hình"
+  },
+  {
+    "index": 9,
+    "tag": "SECTION",
+    "id": "",
+    "className": "border-t border-line bg-cream py-20 lg:py-24",
+    "rect": {
+      "width": 1440,
+      "height": 702.140625
+    },
+    "heading": "Đối tác, chứng nhận và truyền thông",
+    "textSnippet": "TRUST & MEDIA Đối tác, chứng nhận và truyền thông Các thông tin đối tác và chứng nhận chỉ được công bố khi đã có xác nhận chính thức. ĐỐI TÁC Nhà "
+  },
+  {
+    "index": 10,
+    "tag": "SECTION",
+    "id": "",
+    "className": "bg-bone py-20 lg:py-28",
+    "rect": {
+      "width": 1440,
+      "height": 917.40625
+    },
+    "heading": "Cẩm nang màu sắc & Sơn nhà",
+    "textSnippet": "JOURNAL Cẩm nang màu sắc & Sơn nhà Kinh nghiệm chọn sơn, phối màu và bảo vệ công trình — ghi lại từ quá trình làm việc cùng các công trình thực tế. "
+  },
+  {
+    "index": 11,
+    "tag": "SECTION",
+    "id": "",
+    "className": "bg-sand py-16 lg:py-24",
+    "rect": {
+      "width": 1440,
+      "height": 396.75
+    },
+    "heading": "Bạn đang tìm màu sơn phù hợp cho công trình?",
+    "textSnippet": "TƯ VẤN Bạn đang tìm màu sơn phù hợp cho công trình? Liên hệ WANDERS để được hỗ trợ lựa chọn sản phẩm và giải pháp sơn phù hợp. NHẬN TƯ VẤN Hotline"
+  },
+  {
+    "index": 12,
+    "tag": "FOOTER",
+    "id": "",
+    "className": "bg-charcoal text-bone/70",
+    "rect": {
+      "width": 1440,
+      "height": 509.75
+    },
+    "textSnippet": "WANDERS DEINE WAND MAL ANDERS Sơn trang trí và giải pháp màu sắc cho không gian sống hiện đại — mỗi bức tường, một dấu ấn riêng. [Cập nhật địa chỉ s"
+  },
+  {
+    "index": 13,
+    "tag": "SECTION",
+    "id": "",
+    "className": "",
+    "rect": {
+      "width": 1440,
+      "height": 0
+    },
+    "textSnippet": ""
+  }
+]

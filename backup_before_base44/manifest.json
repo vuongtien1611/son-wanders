@@ -1,0 +1,22 @@
+{
+  "name": "MY HOUR Việt Nam",
+  "short_name": "MY HOUR Việt Nam",
+  "description": "Website chính thức của thương hiệu sơn MY HOUR Việt Nam, cung cấp thông tin chi tiết về sản phẩm sơn trang trí, sơn chống thấm, dự án thực tế và giải pháp màu sắc thịnh vượng cho không gian sống.",
+  "icons": [
+    {
+      "src": "https://media.base44.com/images/public/6ae1bdb51161f44b4216e5cf/b3997bdd2_logo.png/v1/fit/w_192,h_192/b3997bdd2_logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://media.base44.com/images/public/6ae1bdb51161f44b4216e5cf/b3997bdd2_logo.png/v1/fit/w_512,h_512/b3997bdd2_logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1E3A2F",
+  "background_color": "#ffffff",
+  "scope": "/"
+}

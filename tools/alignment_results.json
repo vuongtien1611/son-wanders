@@ -1,0 +1,372 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "passed": true,
+    "maxContainerLeftDiff": 0,
+    "maxContainerRightDiff": 0,
+    "maxContentLeftDiff": 0,
+    "maxContentRightDiff": 0,
+    "leftGuideX": 100,
+    "rightGuideX": 1340,
+    "screenshotName": "container_guide_1440px.png",
+    "measurements": [
+      {
+        "name": "Header Inner",
+        "missing": false,
+        "containerLeft": 60,
+        "containerRight": 1380,
+        "containerWidth": 1320,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 100,
+        "contentRight": 1340,
+        "contentWidth": 1240
+      },
+      {
+        "name": "Hero Content",
+        "missing": false,
+        "containerLeft": 60,
+        "containerRight": 1380,
+        "containerWidth": 1320,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 100,
+        "contentRight": 1340,
+        "contentWidth": 1240
+      },
+      {
+        "name": "Color Studio",
+        "missing": false,
+        "containerLeft": 60,
+        "containerRight": 1380,
+        "containerWidth": 1320,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 100,
+        "contentRight": 1340,
+        "contentWidth": 1240
+      },
+      {
+        "name": "Gợi ý phối màu",
+        "missing": false,
+        "containerLeft": 60,
+        "containerRight": 1380,
+        "containerWidth": 1320,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 100,
+        "contentRight": 1340,
+        "contentWidth": 1240
+      },
+      {
+        "name": "Footer Inner",
+        "missing": false,
+        "containerLeft": 60,
+        "containerRight": 1380,
+        "containerWidth": 1320,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 100,
+        "contentRight": 1340,
+        "contentWidth": 1240
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 900,
+    "passed": true,
+    "maxContainerLeftDiff": 0,
+    "maxContainerRightDiff": 0,
+    "maxContentLeftDiff": 0,
+    "maxContentRightDiff": 0,
+    "leftGuideX": 40,
+    "rightGuideX": 1240,
+    "screenshotName": "container_guide_1280px.png",
+    "measurements": [
+      {
+        "name": "Header Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1280,
+        "containerWidth": 1280,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 1240,
+        "contentWidth": 1200
+      },
+      {
+        "name": "Hero Content",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1280,
+        "containerWidth": 1280,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 1240,
+        "contentWidth": 1200
+      },
+      {
+        "name": "Color Studio",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1280,
+        "containerWidth": 1280,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 1240,
+        "contentWidth": 1200
+      },
+      {
+        "name": "Gợi ý phối màu",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1280,
+        "containerWidth": 1280,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 1240,
+        "contentWidth": 1200
+      },
+      {
+        "name": "Footer Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1280,
+        "containerWidth": 1280,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 1240,
+        "contentWidth": 1200
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "passed": true,
+    "maxContainerLeftDiff": 0,
+    "maxContainerRightDiff": 0,
+    "maxContentLeftDiff": 0,
+    "maxContentRightDiff": 0,
+    "leftGuideX": 40,
+    "rightGuideX": 984,
+    "screenshotName": "container_guide_1024px.png",
+    "measurements": [
+      {
+        "name": "Header Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1024,
+        "containerWidth": 1024,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 984,
+        "contentWidth": 944
+      },
+      {
+        "name": "Hero Content",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1024,
+        "containerWidth": 1024,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 984,
+        "contentWidth": 944
+      },
+      {
+        "name": "Color Studio",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1024,
+        "containerWidth": 1024,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 984,
+        "contentWidth": 944
+      },
+      {
+        "name": "Gợi ý phối màu",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1024,
+        "containerWidth": 1024,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 984,
+        "contentWidth": 944
+      },
+      {
+        "name": "Footer Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 1024,
+        "containerWidth": 1024,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 984,
+        "contentWidth": 944
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "passed": true,
+    "maxContainerLeftDiff": 0,
+    "maxContainerRightDiff": 0,
+    "maxContentLeftDiff": 0,
+    "maxContentRightDiff": 0,
+    "leftGuideX": 40,
+    "rightGuideX": 728,
+    "screenshotName": "container_guide_768px.png",
+    "measurements": [
+      {
+        "name": "Header Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 768,
+        "containerWidth": 768,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 728,
+        "contentWidth": 688
+      },
+      {
+        "name": "Hero Content",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 768,
+        "containerWidth": 768,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 728,
+        "contentWidth": 688
+      },
+      {
+        "name": "Color Studio",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 768,
+        "containerWidth": 768,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 728,
+        "contentWidth": 688
+      },
+      {
+        "name": "Gợi ý phối màu",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 768,
+        "containerWidth": 768,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 728,
+        "contentWidth": 688
+      },
+      {
+        "name": "Footer Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 768,
+        "containerWidth": 768,
+        "paddingLeft": 40,
+        "paddingRight": 40,
+        "contentLeft": 40,
+        "contentRight": 728,
+        "contentWidth": 688
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "passed": true,
+    "maxContainerLeftDiff": 0,
+    "maxContainerRightDiff": 0,
+    "maxContentLeftDiff": 0,
+    "maxContentRightDiff": 0,
+    "leftGuideX": 24,
+    "rightGuideX": 366,
+    "screenshotName": "container_guide_390px.png",
+    "measurements": [
+      {
+        "name": "Header Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 390,
+        "containerWidth": 390,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "contentLeft": 24,
+        "contentRight": 366,
+        "contentWidth": 342
+      },
+      {
+        "name": "Hero Content",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 390,
+        "containerWidth": 390,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "contentLeft": 24,
+        "contentRight": 366,
+        "contentWidth": 342
+      },
+      {
+        "name": "Color Studio",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 390,
+        "containerWidth": 390,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "contentLeft": 24,
+        "contentRight": 366,
+        "contentWidth": 342
+      },
+      {
+        "name": "Gợi ý phối màu",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 390,
+        "containerWidth": 390,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "contentLeft": 24,
+        "contentRight": 366,
+        "contentWidth": 342
+      },
+      {
+        "name": "Footer Inner",
+        "missing": false,
+        "containerLeft": 0,
+        "containerRight": 390,
+        "containerWidth": 390,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "contentLeft": 24,
+        "contentRight": 366,
+        "contentWidth": 342
+      }
+    ]
+  }
+]

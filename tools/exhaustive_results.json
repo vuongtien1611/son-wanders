@@ -1,0 +1,134 @@
+[
+  {
+    "label": "File_bang_mau_html_Desktop",
+    "url": "file:///C:/Users/Admin/Documents/sơn myhouse/giao-dien/website_download/bang-mau.html",
+    "status": 200,
+    "failedRequests": 0,
+    "consoleErrors": 0,
+    "headerLogoOk": true,
+    "heroImgOk": true,
+    "roomImgOk": true,
+    "activeBanner": {
+      "bg": "rgb(212, 155, 142)",
+      "code": "WN0824",
+      "name": "Prairie Gentian"
+    },
+    "swatchCount": 24,
+    "layout": {
+      "display": "grid",
+      "gridTemplateColumns": "260px 770px 330px",
+      "width": 1408
+    },
+    "screenshotName": "verified_file_bang_mau_html_desktop.png"
+  },
+  {
+    "label": "HTTP_bang_mau_folder_Desktop",
+    "url": "http://localhost:3000/bang-mau/",
+    "status": 200,
+    "failedRequests": 0,
+    "consoleErrors": 0,
+    "headerLogoOk": true,
+    "heroImgOk": true,
+    "roomImgOk": true,
+    "activeBanner": {
+      "bg": "rgb(212, 155, 142)",
+      "code": "WN0824",
+      "name": "Prairie Gentian"
+    },
+    "swatchCount": 24,
+    "layout": {
+      "display": "grid",
+      "gridTemplateColumns": "260px 770px 330px",
+      "width": 1408
+    },
+    "screenshotName": "verified_http_bang_mau_folder_desktop.png"
+  },
+  {
+    "label": "HTTP_bang_mau_html_Desktop",
+    "url": "http://localhost:3000/bang-mau.html",
+    "status": 200,
+    "failedRequests": 0,
+    "consoleErrors": 0,
+    "headerLogoOk": true,
+    "heroImgOk": true,
+    "roomImgOk": true,
+    "activeBanner": {
+      "bg": "rgb(212, 155, 142)",
+      "code": "WN0824",
+      "name": "Prairie Gentian"
+    },
+    "swatchCount": 24,
+    "layout": {
+      "display": "grid",
+      "gridTemplateColumns": "260px 770px 330px",
+      "width": 1408
+    },
+    "screenshotName": "verified_http_bang_mau_html_desktop.png"
+  },
+  {
+    "label": "HTTP_cam_hung_folder_Desktop",
+    "url": "http://localhost:3000/cam-hung-mau-sac/",
+    "status": 200,
+    "failedRequests": 0,
+    "consoleErrors": 0,
+    "headerLogoOk": true,
+    "heroImgOk": true,
+    "roomImgOk": true,
+    "activeBanner": {
+      "bg": "rgb(212, 155, 142)",
+      "code": "WN0824",
+      "name": "Prairie Gentian"
+    },
+    "swatchCount": 24,
+    "layout": {
+      "display": "grid",
+      "gridTemplateColumns": "260px 770px 330px",
+      "width": 1408
+    },
+    "screenshotName": "verified_http_cam_hung_folder_desktop.png"
+  },
+  {
+    "label": "HTTP_bang_mau_Tablet",
+    "url": "http://localhost:3000/bang-mau/",
+    "status": 200,
+    "failedRequests": 0,
+    "consoleErrors": 0,
+    "headerLogoOk": true,
+    "heroImgOk": true,
+    "roomImgOk": true,
+    "activeBanner": {
+      "bg": "rgb(212, 155, 142)",
+      "code": "WN0824",
+      "name": "Prairie Gentian"
+    },
+    "swatchCount": 24,
+    "layout": {
+      "display": "grid",
+      "gridTemplateColumns": "736px",
+      "width": 736
+    },
+    "screenshotName": "verified_http_bang_mau_tablet.png"
+  },
+  {
+    "label": "HTTP_bang_mau_Mobile",
+    "url": "http://localhost:3000/bang-mau/",
+    "status": 200,
+    "failedRequests": 0,
+    "consoleErrors": 0,
+    "headerLogoOk": true,
+    "heroImgOk": true,
+    "roomImgOk": true,
+    "activeBanner": {
+      "bg": "rgb(212, 155, 142)",
+      "code": "WN0824",
+      "name": "Prairie Gentian"
+    },
+    "swatchCount": 24,
+    "layout": {
+      "display": "grid",
+      "gridTemplateColumns": "358px",
+      "width": 358
+    },
+    "screenshotName": "verified_http_bang_mau_mobile.png"
+  }
+]

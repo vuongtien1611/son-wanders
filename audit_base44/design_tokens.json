@@ -1,0 +1,211 @@
+{
+  "bodyFont": "\"Be Vietnam Pro\", system-ui, sans-serif",
+  "bodyColor": "rgb(39, 49, 52)",
+  "bodyBg": "rgb(248, 246, 241)",
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Mỗi bức tường, một dấu ấn riêng.",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "64px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "H2",
+      "text": "Khám phá màu sắc của riêng bạn",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "40px",
+      "fontWeight": "600",
+      "color": "rgb(40, 50, 53)"
+    },
+    {
+      "tag": "H2",
+      "text": "Giải pháp sơn cho mọi không gian",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "40px",
+      "fontWeight": "600",
+      "color": "rgb(40, 50, 53)"
+    },
+    {
+      "tag": "H3",
+      "text": "Sơn nội thất",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "H3",
+      "text": "Sơn ngoại thất",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "H3",
+      "text": "Sơn chống thấm",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "H3",
+      "text": "Sơn lót",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "H3",
+      "text": "Sơn chống nóng",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "H3",
+      "text": "Sản phẩm khác",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "600",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "H2",
+      "text": "Sản phẩm WANDERS nổi bật",
+      "fontFamily": "\"Be Vietnam Pro\", system-ui, sans-serif",
+      "fontSize": "40px",
+      "fontWeight": "600",
+      "color": "rgb(40, 50, 53)"
+    }
+  ],
+  "buttons": [
+    {
+      "text": "",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(40, 50, 53)",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(40, 50, 53)",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "01\nTrung tính ấm\nWARM NEUTRAL",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(40, 50, 53)",
+      "borderRadius": "0px",
+      "padding": "16px 0px"
+    },
+    {
+      "text": "02\nTông đất\nEARTH TONE",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(104, 113, 109)",
+      "borderRadius": "0px",
+      "padding": "16px 0px"
+    },
+    {
+      "text": "03\nXanh xô thơm\nSAGE GREEN",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(104, 113, 109)",
+      "borderRadius": "0px",
+      "padding": "16px 0px"
+    },
+    {
+      "text": "04\nXanh hiện đại\nMODERN BLUE",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(104, 113, 109)",
+      "borderRadius": "0px",
+      "padding": "16px 0px"
+    },
+    {
+      "text": "05\nTrắng mềm\nSOFT WHITE",
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(104, 113, 109)",
+      "borderRadius": "0px",
+      "padding": "16px 0px"
+    },
+    {
+      "text": "",
+      "bg": "rgb(243, 234, 219)",
+      "color": "rgb(39, 49, 52)",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "",
+      "bg": "rgb(234, 223, 203)",
+      "color": "rgb(39, 49, 52)",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    {
+      "text": "",
+      "bg": "rgb(223, 208, 184)",
+      "color": "rgb(39, 49, 52)",
+      "borderRadius": "0px",
+      "padding": "0px"
+    }
+  ],
+  "containers": [
+    {
+      "maxWidth": "none",
+      "paddingLeft": "0px",
+      "paddingRight": "0px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    },
+    {
+      "maxWidth": "1320px",
+      "paddingLeft": "40px",
+      "paddingRight": "40px"
+    }
+  ]
+}

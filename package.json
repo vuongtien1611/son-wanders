@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "puppeteer-core": "^25.16.0"
+  },
+  "scripts": {
+    "start": "node website_download/server.js",
+    "preview": "node website_download/server.js"
+  }
+}

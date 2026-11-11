@@ -1,0 +1,22 @@
+{
+  "name": "WANDERS — Sơn trang trí & Color Studio",
+  "short_name": "WANDERS Paint",
+  "description": "Website chính thức của thương hiệu sơn WANDERS — giải pháp sơn nội thất, ngoại thất, chống thấm, sơn lót, sơn chống nóng và Color Studio.",
+  "icons": [
+    {
+      "src": "./images/base44/a963c52b6_image.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/base44/a963c52b6_image.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#283235",
+  "background_color": "#F8F6F0",
+  "scope": "./"
+}

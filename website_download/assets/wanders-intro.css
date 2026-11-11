@@ -1,0 +1,485 @@
+/**
+ * WANDERS CINEMATIC PAINT EXPLOSION INTRO
+ * Concept: WANDERS – THE POWER OF COLOR ("Sắc màu kiến tạo không gian sống")
+ * Colors:
+ *   Forest Green: #0F4C3A
+ *   Deep Green:   #073B2E
+ *   Gold:         #D6AD45
+ *   Ivory:        #FAF9F5
+ *   Charcoal:     #2F383E
+ */
+
+/* Lock scroll smoothly only while intro is actively playing */
+html.wi-active,
+html.wi-active body {
+  overflow: hidden !important;
+}
+
+#wanders-intro {
+  display: none;
+}
+
+html.wi-active #wanders-intro {
+  display: block;
+}
+
+.wi-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: transparent;
+  color: #FAF9F5;
+  font-family: "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Main GPU Curtain holding backdrop, stage & liquid trailing bottom wave */
+.wi-curtain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  pointer-events: none;
+}
+
+.wi-curtain-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse 80% 72% at 50% 42%, rgba(21, 102, 77, 0.55) 0%, transparent 70%),
+    linear-gradient(180deg, #0F4C3A 0%, #073B2E 58%, #04241C 100%);
+}
+
+/* Fullscreen Layers */
+.wi-layer,
+.wi-canvas,
+.wi-vignette {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Paint Asset Layers (16:9 images adapted responsively without distortion) */
+.wi-layer {
+  overflow: hidden;
+  opacity: 0;
+  will-change: transform, opacity, clip-path;
+}
+
+.wi-layer img {
+  position: absolute;
+  inset: -4%;
+  width: 108%;
+  height: 108%;
+  object-fit: cover;
+  object-position: center center;
+  max-width: none;
+  -webkit-mask-image: radial-gradient(ellipse 78% 78% at 50% 50%, #000 56%, transparent 100%);
+  mask-image: radial-gradient(ellipse 78% 78% at 50% 50%, #000 56%, transparent 100%);
+  will-change: transform;
+}
+
+.wi-vignette {
+  background:
+    radial-gradient(ellipse 75% 70% at 50% 50%, transparent 32%, rgba(4, 31, 24, 0.56) 78%, rgba(4, 36, 28, 0.85) 100%),
+    linear-gradient(180deg, rgba(4, 31, 24, 0.45) 0%, transparent 25%, transparent 72%, #04241C 100%);
+  z-index: 6;
+}
+
+.wi-canvas {
+  z-index: 8;
+}
+
+/* Micro-shake shock container on impact */
+.wi-kinetic-stage {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+
+/* Phase A: Bottom Energy Charge surge inside bottom rim of curtain */
+.wi-paint-charge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 92px;
+  z-index: 18;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(0, 18px, 0) scaleY(0.35);
+  transform-origin: center bottom;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(245, 220, 142, 0.96) 0px,
+      rgba(214, 173, 69, 0.92) 3px,
+      rgba(37, 178, 134, 0.78) 10px,
+      rgba(20, 114, 86, 0.42) 34px,
+      transparent 100%
+    );
+  will-change: transform, opacity;
+  transition:
+    opacity 0.11s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wi-intro--charge .wi-paint-charge {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scaleY(1);
+}
+
+.wi-intro--wipe .wi-paint-charge {
+  opacity: 0.18;
+  transition: opacity 0.28s ease-out;
+}
+
+/* Bottom Trailing Liquid Paint Wave Skirt (moves cleanly inside .wi-curtain coordinate space) */
+.wi-curtain-wave {
+  position: absolute;
+  left: -1%;
+  width: 102%;
+  top: calc(100% - 2px);
+  height: clamp(92px, 13vw, 148px);
+  z-index: 19;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.wi-wave-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.wi-wave-drops {
+  position: absolute;
+  left: 0;
+  top: 22%;
+  width: 100%;
+  height: 82%;
+  display: block;
+  transform: translate3d(0, -14px, 0);
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.2s ease-out, transform 0.88s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.wi-intro--wipe .wi-wave-drops {
+  opacity: 1;
+  transform: translate3d(0, 6px, 0);
+}
+
+/* Center Brand Composition Stage */
+.wi-brand-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  pointer-events: none;
+}
+
+/* Precision Responsive Unit based on exact measured PNG glyph widths:
+   Total trimmed units: W(1597) + A(754) + N(826) + D(898) + E(778) + R(772) + S(918) = 6543 + 6*gaps(660) = 7203 units
+*/
+.wi-logo-row {
+  --wi-u: min(0.13px, calc((100vw - 44px) / 7203));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(110 * var(--wi-u));
+  padding: 14px 10px;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.36));
+}
+
+@media (min-width: 768px) {
+  .wi-logo-row {
+    --wi-u: min(0.114px, calc((100vw - 120px) / 7203));
+  }
+}
+
+@media (min-width: 1280px) {
+  .wi-logo-row {
+    --wi-u: min(0.132px, calc(980px / 7203));
+  }
+}
+
+/* Luminous emerald/gold aura behind formed logo */
+.wi-logo-glow {
+  position: absolute;
+  inset: -45% -18%;
+  background: radial-gradient(ellipse at center, rgba(214, 173, 69, 0.16) 0%, rgba(15, 76, 58, 0.25) 45%, transparent 72%);
+  opacity: 0;
+  filter: blur(22px);
+  transition: opacity 0.65s ease;
+  pointer-events: none;
+}
+
+.wi-intro--reveal .wi-logo-glow {
+  opacity: 1;
+}
+
+/* Individual Proportional Letter Slot */
+.wi-letter-slot {
+  position: relative;
+  flex-shrink: 0;
+  width: calc(var(--gw) * var(--wi-u));
+  height: calc(1028 * var(--wi-u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translate3d(0, 20px, 0) scale(1.16);
+  clip-path: inset(100% 0 0 0);
+  will-change: transform, opacity, clip-path;
+}
+
+.wi-letter-slot img {
+  position: absolute;
+  left: calc(-1 * var(--tx) * var(--wi-u));
+  top: calc(-1 * var(--ty) * var(--wi-u));
+  width: calc(var(--cs, 1200) * var(--wi-u));
+  height: calc(var(--cs, 1200) * var(--wi-u));
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  /* Transform authentic charcoal stencil into luminous Ivory (#FAF9F5) while preserving 100% original geometry */
+  filter: brightness(0) invert(0.98) sepia(0.08) saturate(0.28);
+  pointer-events: none;
+}
+
+.wi-letter-slot.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  clip-path: inset(0 0 0 0);
+  transition:
+    transform 0.48s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.28s ease-out,
+    clip-path 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Specular Gold Sweep Overlay across formed wordmark */
+.wi-gold-sweep {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 4;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+}
+
+.wi-gold-sweep::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -45%;
+  width: 30%;
+  background: radial-gradient(
+    ellipse 50% 60% at 50% 50%,
+    rgba(250, 249, 245, 0.56) 0%,
+    rgba(214, 173, 69, 0.28) 45%,
+    transparent 100%
+  );
+  transform: translateX(0) skewX(-18deg);
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+
+.wi-intro--reveal .wi-gold-sweep::after {
+  opacity: 1;
+  animation: wiGoldSweep 0.72s cubic-bezier(0.25, 0.85, 0.35, 1) forwards;
+}
+
+@keyframes wiGoldSweep {
+  0% {
+    transform: translateX(-10%) skewX(-18deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(460%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+/* Gold Hairline + Tagline Reveal (Scene 04) */
+.wi-brand-meta {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wi-gold-rule {
+  width: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent 0%, #D6AD45 25%, #FAF9F5 50%, #D6AD45 75%, transparent 100%);
+  opacity: 0;
+  transition: width 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+}
+
+.wi-intro--reveal .wi-gold-rule {
+  width: min(210px, 46vw);
+  opacity: 1;
+}
+
+.wi-tagline {
+  margin-top: 16px;
+  font-size: clamp(11px, 2.4vw, 14px);
+  font-weight: 600;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: #D6AD45;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translate3d(0, 12px, 0);
+  transition: opacity 0.45s ease 0.1s, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+}
+
+.wi-subline {
+  margin-top: 8px;
+  font-size: clamp(9.5px, 1.8vw, 11px);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(250, 249, 245, 0.9);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  transform: translate3d(0, 8px, 0);
+  transition: opacity 0.45s ease 0.2s, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+}
+
+.wi-intro--reveal .wi-tagline,
+.wi-intro--reveal .wi-subline {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Scene 05: Power Paint Wipe (Logo Fade -> Bottom Charge -> Upward Curtain Sweep) */
+.wi-brand-stage {
+  transition:
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+}
+
+.wi-intro--logo-fade .wi-brand-stage {
+  opacity: 0;
+  transform: translate3d(0, -16px, 0) scale(1.03);
+}
+
+.wi-intro--logo-fade .wi-skip-btn,
+.wi-intro--logo-fade .wi-progress-track {
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: opacity 0.2s ease-out;
+}
+
+.wi-intro--wipe .wi-curtain {
+  transform: translate3d(0, calc(-100% - 170px), 0);
+  transition: transform 0.95s cubic-bezier(0.65, 0, 0.16, 1);
+}
+
+.wi-intro--wipe {
+  pointer-events: none;
+}
+
+/* Skip Button (Accessible Top-Right Control) */
+.wi-skip-btn {
+  position: fixed;
+  top: max(18px, env(safe-area-inset-top, 18px));
+  right: max(18px, env(safe-area-inset-right, 18px));
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 18px;
+  border: 1px solid rgba(250, 249, 245, 0.28);
+  background: rgba(7, 59, 46, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #FAF9F5;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.wi-skip-btn:hover,
+.wi-skip-btn:focus-visible {
+  background: #D6AD45;
+  border-color: #D6AD45;
+  color: #073B2E;
+  outline: none;
+}
+
+.wi-skip-btn:active {
+  transform: scale(0.97);
+}
+
+/* Subtle Bottom Timeline Progress Bar */
+.wi-progress-track {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.5px;
+  z-index: 30;
+  background: rgba(250, 249, 245, 0.08);
+  pointer-events: none;
+}
+
+.wi-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #0F4C3A 0%, #D6AD45 70%, #FAF9F5 100%);
+  will-change: width;
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .wi-overlay,
+  .wi-curtain,
+  .wi-paint-charge,
+  .wi-wave-drops,
+  .wi-brand-stage,
+  .wi-letter-slot,
+  .wi-gold-sweep::after,
+  .wi-gold-rule,
+  .wi-tagline,
+  .wi-subline {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
